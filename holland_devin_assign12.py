@@ -36,12 +36,14 @@ def c2():
 
 main()
 
+# alt_1 for c1()
 # max = 0
 # while max != 5:
 #   print(state)
 #   max =+ 1
 #   state = states_visited.readline().rstrip('\n')
 
+# alt_2 for c1()
 # states_visited = open('states_visited.txt', 'r')
 # states = []
 # count = len(states)
