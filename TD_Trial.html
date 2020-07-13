@@ -1,0 +1,457 @@
+<h2>Form Creation</h2>
+
+<h3>Table of Contents</h3>
+
+<ul>
+	<li><a href="#logging_on">Logging On</a></li>
+	<li><a href="#design_dashboard">Design Dashboard</a></li>
+	<li><a href="#name_type_page">Name/Type Page</a></li>
+	<li><a href="#admin_notifications">Administrator Notifications</a></li>
+	<li><a href="#custom_text">Custom Text</a></li>
+	<li><a href="#sso">Single Sign-On</a></li>
+	<li><a href="#start_designing">Start Designing</a></li>
+	<li><a href="#tables">Tables</a></li>
+	<li><a href="#long_answers">Long Answer</a></li>
+	<li><a href="#short_answers">Short Answer</a></li>
+	<li><a href="#choice_lists">Choice Lists</a></li>
+	<li><a href="#date_picker">Date Picker</a></li>
+	<li><a href="#check_box">Check Box</a></li>
+	<li><a href="#radio_buttons">Radio Buttons</a></li>
+	<li><a href="#text_html">Text &amp; HTML</a></li>
+	<li><a href="#image">Image</a></li>
+	<li><a href="#file_upload">File Upload</a></li>
+	<li><a href="#copy_items">Copying Existing Form Items</a></li>
+	<li><a href="#activation">Activating Your Form</a></li>
+</ul>
+<a name="logging_on"></a>
+<h3>Logging On</a></h3>
+
+<p><a href="http://nextgensso.com/sp/startSSO.ping?PartnerIdpId=http://sts.volstate.edu/adfs/services/trust&amp;TargetResource=https://dynamicforms.ngwebsolutions.com">Log&nbsp;in</a> to Dynamic Forms.</p>
+
+<a name="design_dashboard"></a>
+<h3>Form Design Dashboard</h3>
+
+<p>The form design dashboard is similar to the other dashboards within Dynamic Forms, except you wil have more options. Each form you have has a drop down next to it titles Action...clicking it like so will give you some options...</p>
+
+<p><img alt="Action Buttons" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=5bf11e98-89a2-48af-8e71-9e3872359ffe.gif" style="width: 474px; height: 190px;" /></p>
+
+<ul>
+	<li>Edit Form Template &ndash; Users can make changes to the template</li>
+	<li>&nbsp;Activate / Deactivate &ndash; Allow users to take forms offline</li>
+	<li>Copy Form Template &ndash; Users can copy any existing form</li>
+	<li>URL Instructions &ndash; Provides users embedding URL (see the &quot;Activating your form&quot; page later in this guide)</li>
+	<li>Delete Form Template &ndash; Deletes form from your unit</li>
+</ul>
+
+<p><strong>When a form is active and has submissions (Reject / Multi /Pending / Processed / Archived) the &lsquo;Edit Form Template&rsquo; option is not available. To continue editing a form you will need to clear out all forms before the option to edit will be available or copy the form to update and make the updated form active. Make sure that you deactivate the original.</strong></p>
+
+<p>Our next step is to create a form, so click on that &quot;Add New Form Template&quot; button and let&#39;s get started! We&#39;re going to be building a form called &quot;Training&quot; which will simply ask a few questions.</p>
+
+<p><img alt="Add Form" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=d939ca67-2984-4416-8890-b45b83fac8f4.gif" style="width: 408px; height: 136px;" /></p>
+
+<p>This action brings up a dialogue box, where we are going to name our form and then click &quot;Add&quot;, like so:</p>
+
+<p><img alt="Add Form Dialogue" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=93eb976d-4cbe-4d13-a766-9eadfc77ab83.gif" style="width: 428px; height: 400px;" /></p>
+
+<a name="name_type_page"></a>
+<h3>Name/Type Page</h3>
+
+<p>Now we have arrived to designing our new form. You will be presented with a page that looks like this picture:</p>
+
+<p><img alt="New Form Creation" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=fb36efbd-06db-46d3-8cd8-8565e6f9edf5.png" style="width: 600px; height: 355px;" /></p>
+
+<p><strong>Name</strong>&nbsp;&ndash; Name of the form &ndash; this can be a part of the subject line in any emails sent&nbsp;</p>
+
+<p><strong>Description</strong>&nbsp;&ndash; for your information only</p>
+
+<p><strong>E-sign Requirements&nbsp;</strong>&bull;</p>
+
+<ul>
+	<li>None &ndash; Will not require a Form Submitter to login to fill out and submit the form. This means the form will not require single-signon.</li>
+	<li>Single-Signature &ndash; Forces Form Submitter to login to Dynamic Forms and sign the form electronically before submitting the form. This will require a Vol State account OR a generic dynamic form account, if for example your form needed a parent to cosign.</li>
+	<li>Multi-Signature &ndash; Allows Form Administer to apply a multi-signature work flow to a form. (This topic will be covered in our advanced form design.</li>
+</ul>
+
+<p><strong>Send confirmation email? -&nbsp;</strong>This option will send the person who submitted the form a confirmation email.</p>
+
+<p><strong>Show the form timer?</strong>&nbsp;<strong>&nbsp;-</strong>&nbsp;A logout timer set to 45min. displays on Dynamic Forms by default. Once a Form Submitter has been inactive for 45 minutes, they will be logged out of Dynamic Forms for security reasons. All forms time out after 45 minutes regardless of whether or not you have this timer enabled on the form, so it is best to leave it set to &quot;yes&quot;.</p>
+
+<p><strong>Use Recaptcha Validation?&nbsp;-</strong>&nbsp;This option forces the submitter to use a validation code to submit the form. If you have the option selected to &quot;None&quot; under Esign requirement, please leave this set to &ldquo;yes&rdquo;. This will prevent robots from filling out your form.</p>
+
+<p><strong>Use Automatic Activation -</strong>&nbsp;This option will allow you to set a date range a form is active, so you can automatically activate or deactivate a form based on date. This is useful for example if your form was being used for event registration.</p>
+
+<p>For our training form, we are not going to require a signature (yet). So, we will use recaptcha validation and then it will be on to the next part of our design, under &quot;Admin Notification&quot;.&nbsp;</p>
+
+<a name="admin_notifications"></a>
+<h3>Administrator Notification</h3>
+
+<p><img alt="Admin Notification" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=df4e55f4-f504-47dc-8d9e-e03589adcee3.png" style="width: 600px; height: 274px;" /></p>
+
+<p>This part of our form design allows emails to be sent to the form &quot;owner or owners&quot;. Each email address specified will be sent an email indicating that someone has submitted the form.&nbsp;</p>
+
+<p><strong>Notification Frequency</strong>&nbsp;&ndash; This field gives you the option to have an email sent either every 24hrs or with every form submitted. If you choose every 24hrs the email recipients will receive an email once every 24hrs if this form has had a submission. If you choose every form the email recipient will receive an email every time a form is submitted.</p>
+
+<p><strong>Notification email recipient(s)</strong>&nbsp;&ndash; Use this field to enter the email or email addresses of the users you would like notified when a form has been submitted.</p>
+
+<p><strong>Use custom email</strong>&nbsp;&ndash; You can have a generic email or custom email sent to the email recipient(s). If you choose custom you will have a few more fields to complete: custom email subject, custom email body, and dynamic email values.</p>
+
+<p><strong>Custom email subject</strong>&nbsp;&ndash; Enter the subject line for the email notification.</p>
+
+<p><strong>Custom email body</strong>&nbsp;&ndash; Enter the custom email message to be sent out.</p>
+
+<p><strong>Dynamic email values</strong>&nbsp;&ndash; You can use this field to display data/text from your form. Users can choose from Common Form values &ndash; related fields that are not placed directly onto a form, and User-entered Form Values &ndash; fields that users have placed on the form.</p>
+
+<p>The next part of our form design will be Custom Text.&nbsp;</p>
+
+<pre>
+You can ignore &quot;Payments&quot; and &quot;Events&quot;. 
+We do not use payment processing in Dynamic Forms.
+&quot;Events&quot; are related to automated processes.</pre>
+
+<a name="custom_text"></a>
+<h3>Custom Text</h3>
+
+<p><img alt="Custom Text" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=df8042f2-3ee6-4b64-ac8b-f74709ae6784.png" style="width: 600px; height: 224px;" /></p>
+
+<p>The Custom Text tab will contain fields that allow you to customize the Inactive Text and if your form is a &quot;No Signature&quot; or a &quot;Single Signature&quot; form, it will also allow you to customize the Confirmation Text on the form.</p>
+
+<p><strong>Inactive Text</strong>&nbsp;- The Inactive Text will be what is displayed on the screen when a form is set to inactive. To deactivate a form, you can do so on the admin home page by clicking on the Action dropdown next to the form you want to deactivate and click &quot;Deactivate this form.&quot;</p>
+
+<p>Here you can customize the message that the form user will see. This will be a nice message indicating the form is currently unavailable.</p>
+
+<p><strong>Confirmation Text</strong> - You will only see the Confirmation Text option in this tab if you are building a &quot;No Signature&quot; or a &quot;Single Signature&quot; form. The Confirmation Text is the message the form participant will see upon completion of the form. For &quot;Multiple Signature&quot; forms, the confirmation text will be customizable for each participant, so it will be located within each participant&#39;s properties.</p>
+
+<a name="sso"></a>
+<h3>SSO&nbsp;- Single SignOn</h3>
+
+<p>This area allows you to display a custom message to people who try to access a form without having Vol State credentials. There are two options:</p>
+
+<p><strong>Owner Notification Email Uses SSO Link? -&nbsp;</strong>Set this option to &quot;yes&quot; if the form owner is internal to Vol State so the email that is sent uses SSO links embedded in it.</p>
+
+<p><strong>Cosigner Notification Email Uses SSO Link? -</strong>&nbsp;This is dependent on your form. If your forms signers are internal to Vol State, choose &quot;Yes&quot;. If there is a cosigner, such as a parent, that is not a Vol State faculty/staff member then choose &quot;No&quot;.</p>
+
+<p>With that set, we are ready to click &quot;Start Designing&quot; to begin to create items on your form.</p>
+
+<a name="start_designing"></a>
+<h3>Form Design</h3>
+
+<p><img alt="Designing Forms" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=f88032b0-f63b-4f44-b02f-7d1ee11054a8.gif" style="width: 600px; height: 228px;" /></p>
+
+<p><strong>How to Add a Form Page Item:</strong></p>
+
+<p>Once you&#39;ve accessed the form designer, adding a new form page item is as simple as dragging and dropping the form item you want to use on the form to its desired location. There are several different form item types to choose from.</p>
+
+<p><img alt="Form Items" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=2d2d0be8-3a7b-4653-a3e1-43fd18fd81c0.png" style="width: 600px; height: 77px;" /></p>
+
+<p><strong>Naming Your Form Items:</strong></p>
+
+<p>Each form item that you add to your form will require a form item name. If you are creating a first name field, it&#39;s recommended to name that field something similar to either &quot;FirstName&quot; or &quot;FName&quot; as that will allow you to easily understand what data that field is collecting.&nbsp;<strong>Form item names need to begin with a letter and cannot contain any spaces or special characters.&nbsp;</strong></p>
+
+<p>NOTE:&nbsp;For each form item that collects data (e.g. Short Answer, Choice List, Long Answer, etc...), you can set those fields as required fields by clicking on the &quot;Required?&quot; checkbox within each field.</p>
+
+<p><strong>Label:&nbsp;</strong>If the form item you have selected gives you an option for a label, you can either name it the same as the Name or choose something different. You can use the label to tell the form user what to fill into the item, such as &quot;First Name&quot;. Or, you can hide the label if you choose. You must use the Label field as screen readers for ADA purposes will read the label to tell the user what to put into the field.</p>
+
+<p><strong>Options</strong></p>
+
+<p>Once you have added an item to your form, you will see these options to the right of your design layout:</p>
+
+<p><img alt="Form Options" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=26447d47-f5b9-4c49-99ac-b12c346df265.png" style="width: 552px; height: 188px;" /></p>
+
+<ul>
+	<li>Advanced: The advanced button gives you more options to modify your form item. We will cover those under each form item.</li>
+	<li>Rules: This button allows you to add ruled and conditions to your form. We will cover those in the Advanced Form Design section.</li>
+	<li>Save: Saves your changes to the form item.</li>
+	<li>Delete: Deletes the form item.</li>
+</ul>
+
+<p><strong>Editing Form Items:</strong></p>
+
+<p>To edit form items, simply click on the form item you want to edit, and it area of the screen that typically shows the different form item types will change to display the different properties of the form item.</p>
+
+<p>Another way to edit form items is to click on the Edit Item tab, and select the form item you would like to edit.</p>
+
+<a name="tables"></a>
+<h3>Tables</h3>
+
+<p><strong>Why use tables?</strong></p>
+
+<p>Building and designing your form using tables is very important to understand if you want to build a clean, professional and organized form. Tables allow you to have control of the horizontal axis of the screen &amp; also aid in the alignment of labels and fields.</p>
+
+<p><strong>How to use tables:</strong></p>
+
+<p>To add a table to your form, drag and drop the Table form item onto the form. By default, your table will contain 1 row and 4 columns. Should you want to add/remove rows and columns, you can do so by using the &quot;+ Add&quot; and &quot;- Remove&quot; buttons next to the Rows and Columns section. You will be prompted to select the position of the row/column you want to remove, or the position on the table of where you want to add your row/column.&nbsp;</p>
+
+<p><img alt="Table" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=d04275d7-5adb-483a-8d2d-c393440c8d7c.png" style="width: 600px; height: 53px;" /></p>
+
+<p><img alt="Table" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=4f711b9a-724f-477a-9741-22a6bc01bf4b.png" style="width: 600px; height: 142px;" /></p>
+
+<p>You can also edit the alignment of the table on your form, as well as any borders that you want on your table by clicking on the &quot;Advanced&quot; button. Here you can select an Outer Border, an Inner Border, or both. You can set the style, thickness, color and padding of the borders.</p>
+
+<p><strong>IMPORTANT:</strong></p>
+
+<p>The width of the table is VERY important. This controls how wide your form is and how much space the form will take up of the screen. By default, the table will automatically be set to 900 pixels wide. This is what we&#39;ve recommended to be the maximum width of your form. You are not limited to only 900 pixels, but we highly recommend allowing that to be the widest you go for your tables.&nbsp;</p>
+
+<p><strong>Why 900 pixels?</strong></p>
+
+<p>We&#39;ve found that 900 pixels is a safe number to use to prevent any form users from having to scroll left and right to view the entire form. As users will have varying resolutions and different screen sizes, we&#39;ve found that 900 pixels is a safe number that works well with all screen sizes/resolutions. 900 pixels also looks great as a PDF. Our PDF writer looks at the widest component of the form and puts all other form items in proportion to that widest component. If the widest table on your form is 1500 pixels, on a PDF, it will look less readable compared to a 900 pixel wide form.</p>
+
+<p><strong>How to use tables for alignment:</strong></p>
+
+<p>We strongly recommend to separate your labels from the actual fields that are collecting data. To do this, simply use the Text &amp; HTML form item in one column, and place the field itself to the column next to the label. This allows other form items within your table to also be aligned. Please see the example below to understand the concept behind this. The table has 6 columns and 3 rows. The first, third and fifth columns contain the labels, and the second, fourth and sixth columns contain the fields that collect the data.</p>
+
+<p><img alt="Table" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=27319ffa-f86c-4497-8467-7bcde5d8ac0f.png" style="width: 600px; height: 101px;" /></p>
+
+<p>Here is how this table would look on on a web browser to a form user:</p>
+
+<p><img alt="Table" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=050ab62d-893a-497b-8a1c-43ee04098bad.png" style="width: 600px; height: 51px;" /></p>
+
+<a name="long_answers"></a>
+<h3>Long Answer</h3>
+
+<p>When the form designer needs to capture an essay-like answer from the end-user, they can use the long answer page item</p>
+
+<p><img alt="Long Answer" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=f3326569-047b-4e05-ace4-886a50b807d7.png" style="width: 600px; height: 81px;" /></p>
+
+<p><strong>Defining the width of your long answer box:</strong></p>
+
+<p>The width is measured in pixels. &nbsp;The typical size of a paper form is 900-1000 pixels wide. &nbsp; So a long answer box with a width of 200 pixels appears to be about 20% of the screen. &nbsp; Here is an example of a long answer 900 pixels wide and 100 pixels high.</p>
+
+<p><img alt="LongAnswer" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=7d1e8ff6-dbf0-4550-8bac-f1b17dd67133.jpg" style="width: 600px; height: 111px;" /></p>
+
+<p><strong>Defining the height of your long answer box:</strong></p>
+
+<p>Like width, height is measured in pixels. &nbsp;Shown below is a long answer that is 500 pixels wide and 150 pixels high.</p>
+
+<p><img alt="Long Answer" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=9ecab40b-6ede-4448-b9ea-eafe5c608644.jpg" style="width: 600px; height: 187px;" /></p>
+
+<p><strong>Advanced Button Settings:</strong></p>
+
+<p><u>Limiting end user&#39;s answer:</u></p>
+
+<p>The &quot;Enter the maximum # of characters allowed&quot; value enables the form designer to limit the end users&#39; answers.</p>
+
+<a name="short_answers"></a>
+<h3>Short Answer</h3>
+
+<p>Short answer fields are used to capture information no longer than a sentence, such as a first or last name.</p>
+
+<p>The short answer field has a number of options to ensure you are capturing the data you are looking for.</p>
+
+<p><img alt="Short Answer" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=181e4d5b-21bf-441b-976e-e6019ea3820d.png" style="width: 600px; height: 150px;" /></p>
+
+<p><strong>Field Edits:</strong></p>
+
+<p>In the Advanced settings, the first option presented to the form designer is the ability to force the end user to enter data in a specific format. &nbsp; You have the following options in the drop down list:</p>
+
+<ul>
+	<li>Generic Answer - allows users to enter numbers, letters and symbols</li>
+	<li>Letters Only (A-Z) - just as it says only letters, and the user cannot enter spaces</li>
+	<li>Letters Only (A-Z - spaces allowed) - same as above but spaces are accepted</li>
+	<li>Numbers Only - only numbers are allowed to be entered</li>
+	<li>Date (MM/DD/YYYY) - ensures that dates are entered and formatted as shown (if the date to be entered is closer to today&#39;s date, you might consider adding a calendar page item instead of a short answer page item).</li>
+	<li>Phone Number - forces a user to enter ten digits to get the format ###-###-####</li>
+	<li>SSN - &nbsp;forces end users to enter nine digits to get format ###-##-####&nbsp;</li>
+	<li>E-mail Address - forces the format of XXXX@XXX.XXX</li>
+	<li>Dollars &amp; Cents - ensures that all dollars amounts entered includes cents</li>
+	<li>Dollar &amp; Cents (longer) - a longer field for millionaires</li>
+	<li>Dollars &amp; No Cents - when you want whole dollar amounts only - no pennies.</li>
+	<li>Prefill - this item is described in our advanced form design section.</li>
+</ul>
+
+<p><strong>Min / Max Values:</strong></p>
+
+<p>The next two options allow you to further control the input of the end user. &nbsp; For example if you wanted to ask the user for the last four digits of your SSN, you could consider adding a minimum value of 4 and a maximum value of 4. &nbsp;This will ensure that the end user will only enter 4 digits into the field.</p>
+
+<p><strong>Mask the input:</strong></p>
+
+<p>This option is provided for sensitive data input. &nbsp; When the end user keys data into a field with this edit, the data appears as stars rather than the data input. &nbsp; Think of this as the same as when you enter your password into a login screen - you only see stars entered not the actual data keyed.</p>
+
+<p><img alt="Short Answer" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=721926f0-db92-4743-a1ce-839c07692121.png" style="width: 600px; height: 53px;" /></p>
+
+<p><strong>Short Answer Box Width:</strong></p>
+
+<p>This enables the form designer to control the length of the short answer input box. &nbsp; The default value is 200 pixels, but you can change that to adjust for the designated input. &nbsp;For example, if the input is &quot;Middle Initial&quot; you could consider using 30 pixels. &nbsp; If the desired input is &quot;Street Address&quot; you could consider using 400 pixels or more.</p>
+
+<a name="choice_lists"></a>
+<h3>Choice Lists</h3>
+
+<p><img alt="Choice" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=e7d900be-56b3-4306-adc4-cffae2723e61.jpg" style="width: 600px; height: 34px;" /></p>
+
+<p>Form designers can create customized drop down (or choice lists) for end users to choose from. &nbsp; The page item has the following features:</p>
+
+<p><strong>Custom choice list label:</strong></p>
+
+<p>Form designers can utilize the default &quot;Please select&quot; label , or &quot;Choose&quot; a blank label or entering a custom drop down label. &nbsp;This is only a label this is not the default text that will be accepted.</p>
+
+<p><img alt="Choice Box" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=996ed30c-43f2-4222-a102-d933e324075e.png" style="width: 600px; height: 138px;" /></p>
+
+<p><strong>Custom choice list fields:</strong></p>
+
+<p>You are now ready to populate the drop down list. &nbsp; To begin, click the&nbsp;&quot;Click here to add a new choice&quot; button. &nbsp; Dynamic Forms gives you two values to enter - one value that the end user sees when she is completing the form, and the other value is the once that gets saved to the database. &nbsp; This is useful if you are moving this data back to a database that is expecting values in a certain format. &nbsp; In the example below, we are displaying a choice of &quot;Yes&quot; or &quot;No&quot; to the end user, but the values that are getting saved to the database are either &quot;Y&quot; or &quot;N&quot;. &nbsp; Just enter the appropriate value and click the save button to save your entries.</p>
+
+<p><img alt="Choice" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=ace50820-55b7-4cc8-8ac0-baf1d3664db9.png" style="width: 600px; height: 171px;" /></p>
+
+<a name="date_picker"></a>
+<h3>Date Picker</h3>
+
+<p><img alt="Date Picker" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=c9fedd8d-762d-4cdc-ac0c-01108b4bd374.jpg" style="width: 600px; height: 67px;" /></p>
+
+<p>Properly formatted dates can be input two main ways:</p>
+
+<ol>
+	<li>&nbsp;With a Short Answer page item with a data edit</li>
+	<li>&nbsp;This Date Picker page item</li>
+</ol>
+
+<p>Designers can determine which is more appropriate for their form&#39;s input. &nbsp; For the example below where the form is capturing a date which is relatively close to today&#39;s date, this date picker page item is ideal.</p>
+
+<p>When the end user clicks on the data input box, a calendar function will pop up to enable the user to point and click the valid date rather than keying the date by hand. &nbsp; The user can navigate the calendar by clicking on the arrows to the right and left of the month, year presented at the top of the calendar.</p>
+
+<p><img alt="Date Picker " src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=e2cd4531-4504-43e2-8f87-1e12529659e1.png" style="width: 359px; height: 260px;" /></p>
+
+<p>If dates are further out in future or in the past, the user might be better off in keying in the date with the short answer field with the data edit present.</p>
+
+<a name="check_box"></a>
+<h3>Check Box</h3>
+
+<p><img alt="Check Box" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=5f98b30a-7e68-40a6-a5ce-29519f66c651.png" style="width: 600px; height: 52px;" /></p>
+
+<p>Form designers can add check boxes to forms. &nbsp; &nbsp;Check boxes are useful in many ways. &nbsp; They can be used as a single choice - no or yes - type of field, or designers can organize multiple check boxes to form a multiple select list. &nbsp; In addition, form designers can use the checkbox as a &nbsp;required page item to ensure that a user must actively acknowledge some text on the form.</p>
+
+<p><img alt="Check Box" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=d3fe831b-d6bf-4d97-84b6-ca008b2d0c8f.png" style="width: 600px; height: 52px;" /></p>
+
+<p><strong>Check box label:</strong></p>
+
+<p>Currently, the label will always appear to the left of the checkbox. &nbsp;Dynamic Forms may add functionality to choose which side of the check box the label will appear on a later date.</p>
+
+<p>For now, if designers wish a label to the right of the check box, it can we accomplished by building a simple 1 row, 2 column table where the check box the first field and a text field contains the label.</p>
+
+<p><img alt="Check Box" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=3e673185-a9be-4b3d-ae3c-2ef1a926ccc6.png" style="width: 215px; height: 63px;" /></p>
+
+<a name="radio_buttons"></a>
+<h3>Radio Buttons</h3>
+
+<p>Radio buttons are like a combination of checkboxes and the choice list field. It display a list of options with corresponding checkboxes and will only allow the form user to select one checkbox from that list. If you are wanting the options to all be displayed and limit the form user to select only one option, either a choice list or radio buttons would be what you want to use.</p>
+
+<p>To configure radio buttons, they work similar to a choice list where you add both the value and description of each option within the field.</p>
+
+<p><img alt="Radio Buttons" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=8832048b-6e3e-4abd-b2fd-82ebcb694b98.png" style="width: 600px; height: 161px;" /></p>
+
+<p>Here is what the radio buttons look like as an actual form user:</p>
+
+<p><img alt="Radio Buttons" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=bcfd1cae-9236-4d81-b61e-73fa4dff5b0a.png" style="width: 600px; height: 85px;" /></p>
+
+<a name="text_html"></a>
+<h3>Text &amp; HTML</h3>
+
+<p>If you need to add text and/or html to a form, click this option.</p>
+
+<p>Dynamic Forms provides this rich text editor will enable you to key in / copy and paste your text into the form. You can also format your text through the editing button inside the editor.</p>
+
+<p><img alt="Text and HTML" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=cb8f0b1e-6541-45e0-a426-2fc8c4a66b4e.png" style="width: 600px; height: 55px;" /></p>
+
+<p><img alt="Text and HTML" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=b7737b6f-8fdb-479a-a2f1-f6afd8d13ec6.png" style="width: 600px; height: 281px;" /></p>
+
+<p>Text &amp; HTML fields are typically used for the form title, messages for form users but most especially for field labels.&nbsp;</p>
+
+<p>Some examples of HTML:</p>
+
+<p>To add a divider line, do the following:</p>
+
+<p>Create a 1 column by 1 row table set to 900pixels wide and add this within the Source code of the Text &amp; HTML field:&nbsp;</p>
+
+<p>&lt;hr color = &quot;#000000&quot; size = &quot;1&quot; width = &quot;100%&quot; /&gt;&nbsp;</p>
+
+<p>This will add a black divider line that&#39;s 1 pixel thick and will take up 100% of the 900 pixel table. You can adjust the color and thickness by switching out the color code and size.</p>
+
+<p>Important Note - Copying text from other sourcesMany times when users copy text from a different source like a website or a custom word document, the text that is copied is accompanied by several lines of HTML formatting (see example below). Sometimes the items copied include HTML open tags or other bad HTML that can affect the performance of the form. &nbsp;Therefore, if you need to copy a large amount of text from a website or other custom source, we recommended that users first click the &quot;Source&quot; button in the top left hand side of the Editor and bring the text in without formatting. Users can then safely format the text.</p>
+
+<p>Here is an example of what happens when you copy a few lines of text (top part of the table below) from a website and directly post this into Dynamic Forms (HTML at bottom of table). &nbsp;In this simple example, the character count went from 473 to 1,753, but more importantly some additional code was copied over - in this case the form was not affected, but it could have been.</p>
+
+<p><img alt="Text and HTML" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=621b145c-f835-429a-a6a0-4d62e5601381.jpg" style="width: 600px; height: 466px;" /></p>
+
+<a name="image"></a>
+<h3>Images</h3>
+
+<p>Dynamic Forms enables you to add images to your forms with the Image Page Item. &nbsp;The best option is for users to upload images into their library of images in Dynamic Forms, but we also give user the ability to host their own forms. ( Note: All images on Dynamic Forms must be hosted in a secure environment to ensure that users do not see a pop up message saying that there are insecure items on the page.) &nbsp;</p>
+
+<p>There are already Vol State logos in your image library, but feel free to add your own.</p>
+
+<p>To see your library of forms or have the option to upload a new image, click on the&ldquo;Choose from Library&rdquo; button within the Advanced section of the Image form item.</p>
+
+<p><img alt="Image Adjustment" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=e670cc5d-dc7b-4b3d-afd4-165506e49313.png" style="width: 600px; height: 57px;" /></p>
+
+<p><img alt="Image Adjustments" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=9dc060b5-31ec-4e1a-828f-f6ebe97ec5c7.png" style="width: 600px; height: 183px;" /></p>
+
+<a name="file_upload"></a>
+<h3>File Upload</h3>
+
+<p>The file upload page item enables the form designer to place an upload document option on the form to the end user.</p>
+
+<p>To the end user, the file upload page item will look like this</p>
+
+<p><img alt="File Upload" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=af17ac0e-7d9a-48eb-9eaf-f361671616fd.jpg" style="width: 600px; height: 41px;" /></p>
+
+<p>The end user would then click the &quot;Choose File&quot; button which will open the File Explorer tool on their computer to enable them to select the file they wish to upload. &nbsp; After the file is selected the user will click the Upload File button to upload that file.&nbsp;</p>
+
+<p><strong>Customizing the File Upload Page Item:</strong></p>
+
+<p>If you have specific instructions for the user, those can be communicated to the user by customizing the field label.</p>
+
+<p><img alt="File Upload" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=b838295f-da76-4207-af29-b6ec5c37e3af.png" style="width: 600px; height: 49px;" /></p>
+
+<p>Note:&nbsp;&nbsp;The file upload page item enables the end user to upload a single document into the form. &nbsp; If multiple forms need to be uploaded, the designer can choose to put additional file upload page items on form.&nbsp;</p>
+
+<p><strong><u>The maximum size per file attached is&nbsp;25MB.</u></strong></p>
+
+<a name="copy_items"></a>
+<h3>Copying Existing Form Items</h3>
+
+<p>To copy existing form items, simply drag and drop the &quot;Existing Item&quot; into your form.&nbsp;</p>
+
+<p>You will then be prompted to provide 2 points of information - a Form Name and a Field Name.</p>
+
+<p><img alt="Existing Item" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=861e9ada-173e-469e-a178-d26c6a39682b.png" style="width: 600px; height: 242px;" /></p>
+
+<p><strong>Form Name:</strong>&nbsp;This field is where you select where the field that you are wanting to copy is located.&nbsp;</p>
+
+<ul>
+	<li>NOTE:&nbsp;You can copy form items that are located in different forms within your org and are not limited to only copying items created within the form you are currently working in.</li>
+</ul>
+
+<p><strong>Field Name:</strong>&nbsp;This is where you select the name of the field/form item that you want to copy. It&#39;s important to keep track of the form item name that you are wanting to copy so you ensure you are copying the correct field.</p>
+
+<p>Once you&#39;ve successfully copied the form item, you can adjust the field&#39;s properties to your liking.</p>
+
+<a name="activation"></a>
+<h3>Activating Your Forms</h3>
+
+<p>After building a form, the form still stays in an &quot;inactive&quot; state until the form designer &quot;activates&quot; the form.</p>
+
+<p>The activate status can be found by looking on the administrator Homepage. &nbsp; In the example below, the form called &quot;Academic Progress Appeal Form&quot; is currently inactive which is reflected by the red active status icon displayed.</p>
+
+<p><img alt="Form Activation" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=50f5febc-b9bb-45cb-acc9-4a456ee54fb6.jpg" style="width: 600px; height: 132px;" /></p>
+
+<p>At this point, &nbsp;the form designer &nbsp;does not see the &quot;fill out form&quot; link above as the form is inactive. &nbsp;If an end user somehow got the link to this form, the end user would see the inactive text defined in the Custom Text area.</p>
+
+<p>To make the form active, the form designer just needs to click on the &quot;Action&quot; button to the right of the form name and click &quot;Activate this Form&quot; selection.</p>
+
+<p><img alt="Form Activation" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=2531393e-f812-4228-a281-5c8cc44fe729.jpg" style="width: 190px; height: 197px;" /></p>
+
+<p>This will turn the red icon to green and the &quot;fill out form&quot; link will appear to the right of the form name.</p>
+
+<p><img alt="Form Activation" src="https://volstate.teamdynamix.com/TDPortal/Images/Viewer?fileName=17886b75-949e-4ada-b3be-d3eab7610eda.jpg" style="width: 600px; height: 142px;" /></p>
+
+<p>Once the form is activated, the &quot;fill out form&quot; link will take the user directly into the form.</p>
+
+<h4>Getting the form URL</h4>
+
+<p>Next you will click the URL button in the action panel on the right side of the form in the dashboard. This will open up a window containing your URL.</p>
+
+<p>If this form is&nbsp;<em>not internal</em>&nbsp;(meaning that people who are NOT Vol State faculty, staff or students will fill out your form), you can copy and paste this form URL into a hyperlink where you would like this form to be accessed from, or send it to the web team to be added into a page on our website.</p>
+
+<p>If this form is&nbsp;<em>internal</em>&nbsp;you will need to add the following url string to the beginning of the URL generated by dynamic forms before sharing or posting this link to your website (<strong>all one string, no spaces</strong>):</p>
+
+<p>https://nextgensso.com/sp/startSSO.ping?PartnerIdpId=http://sts.volstate.edu/adfs/services/trust&amp;TargetResource=</p>
+
+<p>Congratulations, you have built a form!</p>
